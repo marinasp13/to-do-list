@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <title>TO DO LISTt</title>
+</head>
+<body id="body">
+    <main id="main">
+        <aside id="menu-lateral">
+            <button id="menu-lateral-btn-adc-item">Adicionar novo item</button>
+            <div id="menu-lateral-barra-progresso">
+                <p id="percentual-texto"></p>
+                <div id="barra-progresso">
+                    <div id="percentural-concluido"></div>
+                </div>
+            </div>
+            <div class="menu-lateral-temas">
+                <div class="menu-lateral-temas-label">
+                    <img src="assets/pincel.png" class="temas-label-icon" alt="">
+                    <label class="temas-label-texto">Aparência</label>
+                </div>
+                <select id="select">
+                    <option id="cozyTheme">Cozy:theme</option>
+                    <option id="lightModeTheme">Light mode:theme</option>
+                    <option id="darkModeTheme">Dark mode:theme</option>
+                    <option id="pinkModeTheme">Pink:theme</option>
+                </select>
+            </div>
+            
+        </aside>
+        <section id="formulario-container">
+            <div id="formulario-container-conteudo">
+                <div>
+                    <h1>ToDo List</h1>
+                </div>
+                <form>
+                    <input type="text" id="formulario-item-nome" placeholder="Qual item deseja adicionar?" autocomplete="off">
+                    <textarea  name="" id="formulario-item-descricao" rows="1" cols="30" placeholder="Adicione uma descrição ao item..." autocomplete="off"></textarea>
+                    <div id="formulario-botoes">
+                        <button id="fomulario-btn-salvar">Salvar</button>
+                        <button id="fomulario-btn-cancelar">Cancelar</button>
+                    </div>
+                    
+                </form>
+            </div>    
+        </section>
+       
+        <section id="listas">
+            <div class="lista-itens">
+                <h2 class="lista-de-itens-titulo">To-Do List</h2>
+                <p id="mensagem-lista-vazia" >Sua lista está vazia! Adicione seu primeiro item.</p>
+                <ul class="lista-de-itens" id="lista-de-itens-pendentes">
+                    <!--<li class="item-container">
+                        <div class="item-conteudo">
+                            <button class="item-btn-checkbox" id="item-btn-checkbox"><img class="item-img-checkbox" id="checkbox" src="assets/checkbox.png" alt="Ícone de checkbox"></button>
+                            <div class="item-text-container">
+                                <p class="item-nome" id="item-nome">Estudar programação</p>
+                                <p class="item-descricao" id="item-descricao">Finalizar resumos de javascript.</p>
+                            </div>
+                        </div>
+                        <div class="item-botoes">
+                            <button class="item-btn-editar"><img class="item-img-editar" src="assets/editar.png" alt="Ícone de edição"></button>
+                            <button class="item-btn-deletar"><img class="item-img-deletar" src="assets/deletar.png" alt="Ícone de deletar"></button>
+                        </div>    
+                    </li>-->
+                </ul>
+            </div>
+            <div class="lista-itens" id="lista-de-itens-finalizados-container">
+                <h2 class="lista-de-itens-titulo">Itens finalizados</h2>
+                <ul class="lista-de-itens" id="lista-de-itens-finalizados">
+                    
+                </ul>
+            </div>
+        </section>
+        
+    </main>
+    <dialog>
+        <div id="dialog-titulo-container">
+            <p id="dialog-titulo">Área de edição</p>
+            <img id="dialog-img-fechar" src="assets/fechar.png" alt="Imagem de X para cancelar edição">
+        </div>
+        <label class="dialog-label" for="item-nome-edicao">Nome do item:</label>
+        <input type="text" name="" id="item-nome-edicao" autocomplete="off">
+        <label class="dialog-label" for="item-descricao-edicao">Descrição:</label>
+        <textarea name="" id="item-descricao-edicao" rows="3" placeholder="(opcional)" ></textarea>
+        <button id="dialog-btn-salvar">Salvar alterações</button>
+        <!--<button id="dialog-btn-cancelar">Cancelar</button>*-->
+        
+    </dialog> 
+    <script src="js/script.js" type="module"></script>
+</body>
+</html>
