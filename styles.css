@@ -6,11 +6,11 @@
     --font-size-parag-descricao:12px;
 
     --cor1:#f0d9c2;
-    --cor2: #cca36b;
+    --cor2: #ac8378;
     --cor3:#497576;
-    --cor4: #bf845a;
+    --cor4: #d3ab9f;
     --cor5:#132e39;
-    --cor6:#85422d;
+    --cor6:#815042;
 
     --azul-escuro: #011752;
     --cinza: #d1d1d1;
@@ -64,9 +64,10 @@ main{
 #menu-lateral-btn-adc-item{
     background-color: var(--cor6);
     color: var(--cor1);
-    width: 60%;
+    font-size: var(--font-size-parag);
+    width: fit-content;
     align-self: center;
-    padding: 6px;
+    padding: 15px;
     border-radius: 20px;
     border: none;
     cursor: pointer;
@@ -101,8 +102,9 @@ main{
 
 .menu-lateral-temas{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
+    gap: 1rem;
 }
 
 .menu-lateral-temas-label{
@@ -114,7 +116,7 @@ main{
 
 .temas-label-texto{
     font-size: var(--font-size-parag);
-    color: var(--cor1);
+    color: var(--cor6);
 }
 
 select{
@@ -225,6 +227,7 @@ form {
     padding-top: 40px;
     gap: 20px;
     width: 100%;
+    margin-left: 40px;
 }
 
 .lista-itens{
@@ -380,8 +383,8 @@ dialog{
     #menu-lateral{
         position: static;
         width: 100%;
-        height: 40vh;
-        padding-bottom: 40px;
+        height: fit-content;
+        padding-bottom: 25px;
     }
 
     #formulario-container{
